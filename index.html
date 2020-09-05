@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bower_components/Morphext/dist/morphext.css">
+	<link rel="stylesheet" href="morphext.js">
+	<link rel="icon" href="Bootstrap%20logo.jpg" type="img/gif" size="16*16">
+
+	<title>Coders Chinimini</title>
+
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+
+
+		}
+
+		.body {
+			overflow: hidden;
+
+			box-sizing: border-box;
+
+		}
+
+		#navbar {
+			overflow: hidden;
+			background-color: #14BE96;
+			transition: 0.4s;
+			position: fixed;
+			width: 100%;
+			top: 0;
+			z-index: 99;
+		}
+
+		.main-header {
+			width: 100vw;
+			height: 100vh;
+			background-image: url(Ju%201.jpg);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+
+
+		.navbar-nav .nav-link {
+			text-transform: uppercase;
+			text-align: center;
+			font-size: 15px;
+			text-decoration: none;
+			color: white;
+			font-family: "open-sans";
+			transition: 0.3s ease;
+			padding: 10px 0;
+			margin: 0 10px;
+			text-decoration-style: double;
+		}
+
+
+
+		.navbar-nav .nav-link.active,
+		.navbar-nav .nav-link:hover {
+			border-top: 4px solid #000000;
+			border-bottom: 4px solid #000000;
+			padding: 6px 0px;
+			background: green;
+		}
+
+
+
+
+		.text-container {
+			width: 100%;
+			height: 100%;
+			padding: 40vh 25vw;
+			text-align: center;
+		}
+
+		.text-container h1 {
+			position: relative;
+			font-family: sans-serif;
+			text-transform: uppercase;
+			font-size: em;
+			letter-spacing: 5px;
+			overflow: hidden;
+			background: linear-gradient(100deg, #008000, #fff, #00FF00);
+			background-repeat: no-repeat;
+			background-size: 80%;
+			animation: animate 15s linear infinite;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: rgba(255, 255, 255, 0);
+		}
+
+		@keyframes animate {
+			0% {
+				background-position: -500%;
+			}
+
+			100% {
+				background-position: 500%;
+			}
+		}
+
+
+		.content {
+			height: 100%;
+			padding: 10vh 0;
+
+		}
+
+		.icon-class .icon {
+			width: 100px;
+			height: 80px;
+			text-align: center;
+			padding-top: 15px;
+			font-size: 3rem;
+			background: #14BE96;
+			color: white;
+			clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+
+		}
+
+		.card {
+			box-shadow: 0px 0px 12px 6px #000000;
+		}
+		 .icon{
+			color: #14BE96;
+			 margin-right: 10px;
+		}
+
+		.image-container img {
+			margin: 0;
+			border-radius: 0.50rem;
+			transition: all 0.3s;
+		}
+
+		.image-container:hover img {
+
+			transform: scale(1.10);
+		}
+
+		.dropdown .dropdown-menu a:hover {
+			background: #419FD9;
+			border-radius: 20px;
+
+		}
+
+		
+
+
+
+		.btn-solid-reg {
+			display: inline-block;
+			border: 0.125rem solid #14bf98;
+			border-radius: 0.25rem;
+			background-color: #14bf98;
+			color: #fff;
+			font: 500 0.75rem/0 "Montserrat", sans-serif;
+			text-decoration: none;
+			transition: all 0.2s;
+			margin-bottom: 0;
+		
+			
+		}
+
+		.btn-solid-reg:hover {
+			background: white;
+			cursor: pointer;
+		}
+
+		.cards-2 span {
+			color: #14bf98;
+			
+		}
+		.business{
+			margin-top: 20vh;
+		}
+
+		.business-content {
+			padding: 30px;
+			margin-top: 30vh;
+		}
+
+		.business-content a {
+			text-decoration: none !important;
+			cursor: pointer;
+			color: black;
+		}
+
+		.business-content .content-num {
+			margin-right: 20px;
+			border: 2px solid #14BF98;
+			border-radius: 50%;
+			padding: 0px 12px;
+		}
+
+		.px {
+			padding: 0px 4rem;
+		}
+
+		.business-content .active {
+			color: #14BF98;
+		}
+
+		.business-content .active .content-num {
+			color: white;
+			background-color: #14BF98;
+		}
+
+		.business-content a:hover {
+			color: #14BF98;
+		}
+
+		.business-content a .content-num {
+			color: #14BF98;
+
+		}
+
+		.business-content a:hover .content-num {
+			color: black;
+		}
+
+		.service-1 img {
+			display: block
+		z-index: 10;
+			margin-top: -59vh;
+			margin-left: -2vw;
+		}
+
+
+
+
+		#callMe {
+			color: #14BF98;	
+		}
+
+		.form-1 {
+			height:80vh;
+			margin-top: 10vh;
+			padding-top: 6.625rem;
+			padding-bottom: 5.625rem;
+			background-color: #153e52;
+		}
+
+		form {
+			display: block;
+			margin-top: 0em;
+		}
+
+		.form-1 .list-unstyled .fas {
+			color: #14bf98;
+			font-size: 0.5rem;
+			line-height: 1.375rem;
+		}
+
+		.form-1 .list-unstyled .media-body {
+			margin-left: 0.625rem;
+
+
+
+		}
+
+		.form-group {
+			position: relative;
+			margin-bottom: 1.25rem;
+		}
+
+		.form-1 .form-control-input,
+		.form-1 .form-control-select {
+			border: 1px solid #39728f;
+			background-color: #2a5d77;
+			color: #fff;
+		}
+
+		.form-1 .label-control {
+			color: #fff;
+		}
+
+		.label-control {
+			position: absolute;
+			top: 0.8125rem;
+			left: 1.375rem;
+			color: #787976;
+			opacity: 1;
+			font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
+			cursor: text;
+			transition: all 0.2s ease;
+		}
+
+		form-1 .form-control-input,
+		.form-1 .form-control-select {
+			border: 1px solid #39728f;
+			background-color: #2a5d77;
+			color: #fff;
+		}
+
+		.form-control-select {
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+			height: 3rem;
+		}
+
+		.form-control-input,
+		.form-control-select {
+			display: block;
+			width: 100%;
+			padding-top: 1.25rem;
+			padding-bottom: 0.25rem;
+			padding-left: 1.3125rem;
+			border: 1px solid #dadada;
+			border-radius: 0.25rem;
+			background-color: #fff;
+			color: #787976;
+			font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
+			transition: all 0.2s;
+			-webkit-appearance: none;
+		}
+
+		body,
+		p {
+			color: #787976;
+			font: 400 1rem/1.5625rem "Open Sans", sans-serif;
+		}
+
+		input[type="radio"],
+		input[type="checkbox"] {
+			box-sizing: border-box;
+			padding: 0;
+		}
+
+		checkbox {
+			font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
+		}
+
+		a.white,
+		.white {
+			color: #dfe5ec;
+		}
+
+		.form-control-submit-button {
+			display: inline-block;
+			width: 100%;
+			height: 3.125rem;
+			border: 0.125rem solid #14bf98;
+			border-radius: 0.25rem;
+			background-color: #14bf98;
+			color: #fff;
+			font: 700 0.75rem/1.75rem "Montserrat", sans-serif;
+			cursor: pointer;
+			transition: all 0.2s;
+		}
+		
+	</style>
+
+
+</head>
+
+<body>
+	<div class="main-header">
+		<div id="navbar">
+			<nav class="navbar navbar-expand-lg navbar-default justify-content-bewteen" role="navigation">
+
+				<a href="#" class="navbar-brand">
+					<img src="logo.jpg" class="rounded-circle" alt=""><span class="text-white pl-4"><b>CODER'S CHINIMINI</b></span>
+				</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+						<li class="nav-item">
+							<a class="nav-link" href="#">INTRO</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">SERVICES</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#">CALL ME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">PROJECTS</a>
+						</li>
+						<div class="dropdown">
+							<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+								ABOUT
+							</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">TERMS CONDITIONS</a>
+								<a class="dropdown-item" href="#">PRIVACY POLICY</a>
+
+							</div>
+						</div>
+						<li class="nav-item">
+							<a class="nav-link" href="#">CONTACT</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-facebook"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-google"></i></a>
+						</li>
+
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div Class="text-container">
+			<h1><b>BUSINESS TEMPLATE SERVICES SOLUTIONS</b></h1>
+
+			<h3 class="p-heading p-large text-white">Aria is a top consultancy company specializing in business growth using online marketing and conversion optimization tactics.</h3>
+			<a href="" class="btn btn-success">DISCOVER</a>
+		</div>
+
+
+	</div>
+
+	<!-- Intro -->
+
+	<div id="intro" class="basic-1">
+		<div class="container">
+			<div class="row mt-5">
+				<div class="col-xl-6 col-md-6 col-sm-12">
+					<div class="content">
+						<span class="text-success">CODER'S CHINIMINI</span>
+						<h2 class="text-danger">THANK YOU AKASH VAI</h2>
+						<p>Launching a new company or developing the market position of an existing one can be quite an overwhelming processs at times.</p>
+						<p>Our mission here at Aira is to get you through those tough moments relying on our team's expertise in starting and growing companies."</p>
+						<a href="" class="btn btn-success">Read More</a>
+
+
+
+
+					</div>
+				</div>
+
+				<div class="col-xl-6 col-md-6 col-sm-12">
+					<div class="image-container">
+						<img class="img-fluid" src="intro%20%203.jpg" alt="alternative">
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="icon-class">
+			<div class="row mt-5">
+				<div class="col-xl-4 col-md-4 col-sm-12">
+					<div class="card">
+						<div class="card-body">
+							<i class=" icon fab fa-wordpress-simple"></i>
+							<h2>WORDPRESS</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br><br> Obcaecati repellat reprehenderit, minima nobis dignissimos. Veritatis.</p>
+							<a href="" class="btn btn-success">Read More</a>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-4 col-sm-12">
+					<div class="card">
+						<div class="card-body">
+							<i class=" icon fas fa-code"></i>
+							<h2>HTML,CSS,JS</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br><br> Obcaecati repellat reprehenderit, minima nobis dignissimos. Veritatis.</p>
+							<a href="" class="btn btn-success">Read More</a>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-4 col-sm-12">
+					<div class="card">
+						<div class="card-body">
+							<i class=" icon fab fa-php"></i>
+							<h2>PHP,MYSQLI</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br><br> Obcaecati repellat reprehenderit, minima nobis dignissimos. Veritatis.</p>
+							<a href="" class="btn btn-success">Read More</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!----------Serviecs------------->
+	<div id="Services">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-lg-12 mt-5">
+					<div class="section-title"><span class="text-success">SERVICES</span></div>
+					<h2>Choose The Service Package<br>That Suits Your Needs</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xl-4 col-md-4 col-sm-12">
+					<div class="card mt-5">
+					<img src="services-1.jpg">
+						<div class="card-body">
+						<div class="card-text text-center">
+						<h2>Off The Ground Off The Ground</h2>
+						<p>Perfect for fresh ideas or young startups, this package will help get the business off the ground</p>
+							
+							<p><i class=" icon fas fa-square"></i>Environment and competition</p>
+							<p><i class=" icon fas fa-square"></i>Designing the marketing plan</p>
+							<h3>Starting at <span class="text-success">$199</span></h3>
+							<div class="btn-solid-reg">
+							<a href="" class="btn">DETAILS</a>
+							</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-4 col-sm-12">
+					<div class="card mt-5">
+					<img src="services-2.jpg">
+						<div class="card-body">
+						<div class="card-text text-center">
+						<h2>Accelerated Growth</h2>
+						<p>Use this service pack to give your company the necessary impulse to become an industry leader</p>
+							
+							<p><i class=" icon fas fa-square"></i>Business strategy planning</p>
+							<p><i class=" icon fas fa-square"></i>Taking the planned actions</p>
+							<h3>Starting at <span class="text-success">$299</span></h3>
+							<div class="btn-solid-reg">
+							<a href="" class="btn">DETAILS</a>
+							</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-4 col-sm-12">
+					<div class="card mt-5">
+					<img src="services-3.jpg">
+						<div class="card-body">
+						<div class="card-text text-center">
+						<h2>Market Domination</h2>
+						<p>You already are a reference point in your industry now you need to learn about acquisitions</p>
+							
+							<p><i class=" icon fas fa-square"></i>Maintaining the leader status</p>
+							<p><i class=" icon fas fa-square"></i>Designing the marketing plan</p>
+							<h3>Starting at <span class="text-success">$299</span></h3>
+							
+							<div class="btn-solid-reg">
+							<a href="" class="btn">DETAILS</a>
+							</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-----------BUSINESS----------->
+	<div class="business">
+
+		<div class="row">
+			<div class="col-xl-6 col-md-6 col-sm-12 block-padding">
+				<img src="Business%201.jpg" class="img-fluid" width="100%">
+
+			</div>
+			<div class="col-xl-6 col-md-6 col-sm-12">
+				<div class="business-content">
+					<h1 class="mb-5">Accelerate Business Growth <br>To Improve Revenue Numbers</h1>
+					<a href="#">
+						<h3><span class="content-num">1</span>How Can Aria Help Your Business</h3>
+					</a>
+					<p class="px-6">At Aria solutions, we’ve taken the consultancy concept one step further by offering a full service management organization with expertise.</p>
+					<a href="#">
+						<h3><span class="content-num">2</span>Great Strategic Business Planning</h3>
+					</a>
+					<p class="px-6">Aria partners with businesses to business growth and development ideas including environment analysis, plan execution and evaluation.</p>
+
+					<a href="#">
+						<h3><span class="content-num">3</span>Online Marketing Campaigns</h3>
+					</a>
+					<p class="px-6">An awesome online marketing plan won't save your bad product but paired with a good product, the sky is the limit for what can be achieved.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="service">
+		<div class="row">
+			<div class="service-1">
+				<div class="col-xl-6 col-md-6 col-sm-12">
+					<div class="tabs">
+						<div class="area-1">
+							<div class="tabs-container mt-5">
+
+								<!-- Tabs Links -->
+								<ul class="nav nav-tabs" id="ariaTabs" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-th"></i> Business</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-th"></i> Expertise</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-th"></i> Quality</a>
+									</li>
+								</ul>
+								<!-- end of tabs links -->
+
+								<!-- Tabs Content -->
+								<div class="tab-content" id="ariaTabsContent">
+
+									<!-- Tab -->
+									<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+										<h4>Business Services For Companies</h4>
+										<p>Aria provides the most innovative and customized business services in the industry. Our <a class="green page-scroll" href="#">Services</a> section shows how flexible we are for all types of budgets.</p>
+									</div>
+								</div>
+								<br>
+								<div class="title">Business Development 100%</div>
+								<div class="progress">
+									<div class="progress-bar bg-info" style="width:100%"></div>
+								</div>
+								<br>
+								<div class="title">Opportunity Spotting 76%</div>
+								<div class="progress">
+									<div class="progress-bar bg-info" style="width:76%"></div>
+								</div>
+								<br>
+								<div class="title">Online Marketing 90%</div>
+								<div class="progress">
+									<div class="progress-bar bg-info" style="width:90%"></div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-xl-6 col-md-6 col-sm-12 ml-auto">
+					<img src="Business%202.jpg" class="img-fluid" width="100%">
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-----------CALL ME------------>
+	<div id="callMe" class="form-1">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="text-content">
+						<div class="section-title">CALL ME</div>
+						<h2 class="white">Have Us Contact You By Filling And Submitting The Form</h2>
+						<p class="white">You are just a few steps away from a personalized offer. Just fill in the form and send it to us and we'll get right back with a call to help you decide what service package works.</p>
+						<ul class="list-unstyled li-space-lg white">
+							<li class="media">
+								<i class="fas fa-square"></i>
+								<div class="media-body">It's very easy just fill in the form so we can call</div>
+							</li>
+							<li class="media">
+								<i class="fas fa-square"></i>
+								<div class="media-body">During the call we'll require some info about the company</div>
+							</li>
+							<li class="media">
+								<i class="fas fa-square"></i>
+								<div class="media-body">Don't hesitate to email us for any questions or inquiries</div>
+							</li>
+						</ul>
+					</div>
+				</div> <!-- end of col -->
+				<div class="col-lg-6">
+
+					<!-- Call Me Form -->
+					<form id="callMeForm" data-toggle="validator" data-focus="false" novalidate="true">
+						<div class="form-group">
+							<input type="text" class="form-control-input" id="lname" name="lname" required="">
+							<label class="label-control" for="lname">Name</label>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control-input" id="lphone" name="lphone" required="">
+							<label class="label-control" for="lphone">Phone</label>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control-input" id="lemail" name="lemail" required="">
+							<label class="label-control" for="lemail">Email</label>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<select class="form-control-select" id="lselect" required="">
+								<option class="select-option" value="" disabled="" selected="">Interested in...</option>
+								<option class="select-option" value="Off The Ground">Off The Ground</option>
+								<option class="select-option" value="Accelerated Growth">Accelerated Growth</option>
+								<option class="select-option" value="Market Domination">Market Domination</option>
+							</select>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group checkbox white">
+							<input type="checkbox" id="lterms" value="Agreed-to-Terms" name="lterms" required="">I agree with Aria's stated <a class="white" href="privacy-policy.html">Privacy Policy</a> and <a class="white" href="terms-conditions.html">Terms &amp; Conditions</a>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<button type="submit" class="form-control-submit-button disabled">CALL ME</button>
+						</div>
+						<div class="form-message">
+							<div id="lmsgSubmit" class="h3 text-center hidden"></div>
+						</div>
+					</form>
+					<!-- end of call me form -->
+
+				</div> <!-- end of col -->
+			</div> <!-- end of row -->
+		</div> <!-- end of container -->
+	</div>
+
+
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="bower_components/Morphext/dist/morphext.min.js"></script>
+</body>
+
+</html>
